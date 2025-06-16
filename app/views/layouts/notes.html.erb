@@ -1,0 +1,11 @@
+<% content_for :content do %>
+ <div class="app-title navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand page-title" href="/">Shinme Note</a>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
+<% end %>
+<%= render template: "layouts/application" %>
