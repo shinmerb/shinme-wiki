@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :note
 
   namespace :admin do
+    root "notes#index"
     resources :notes
   end
 end
